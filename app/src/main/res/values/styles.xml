@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <!--<item name="android:background">@drawable/ic_action_search</item
+        <item name="android:popupBackground">@drawable/ic_launcher</item>
+        <item name="android:dropDownSelector">@drawable/ic_launcher</item>-->
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.osu.brandonbooth.myapplication.FiveSActivity">
+
+    <item android:id="@+id/back"
+        android:title="@string/action_back"
+        android:icon="@drawable/ic_action_back"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/search"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_action_search"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/help"
+        android:title="@string/action_help"
+        app:showAsAction="never" />
+
+</menu>

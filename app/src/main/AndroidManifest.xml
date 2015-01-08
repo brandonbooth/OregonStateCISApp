@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.osu.brandonbooth.myapplication" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:id="@+id/launcher1"
+            android:name=".MainActivity"
+            android:label="The OSU CIS App" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FiveSActivity"
+            android:label="@string/title_activity_five_s"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".TimeStudyActivity"
+            android:label="@string/title_activity_time_study" >
+        </activity>
+    </application>
+
+</manifest>
