@@ -156,7 +156,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
+        android:text="sggasdgd sgasd"
         android:id="@+id/textView3"
         android:layout_above="@+id/checkBox"
         android:layout_toRightOf="@+id/numchecked"
