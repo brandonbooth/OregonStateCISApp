@@ -4,6 +4,46 @@
 
     tools:context="com.osu.brandonbooth.myapplication.FiveSActivity">
 
+    <?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <!-- bla bla blaadsgdg
+            sdggsd
+            dsg
+            gasd
+            ags
+            dsg
+            sadg
+            gd
+            adsg
+            dsg
+            dgsdgs
+            sd
+            gdsg
+            sd
+            ggsd
+            s
+            gg
+            sgd
+
+            gs
+
+            sgs
+            g
+            gs
+            sg
+            gs
+            sg
+            gs
+            -->
+        </LinearLayout>
+    </ScrollView>
+
 
     <EditText
         android:layout_width="wrap_content"
