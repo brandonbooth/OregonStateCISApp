@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Six Sigma"
-        android:id="@+id/sixsigma"
+        android:id="@+id/six_sigma"
         android:layout_marginTop="35dp"
         android:layout_below="@+id/timestudy"
         android:layout_alignParentRight="true"

@@ -11,5 +11,6 @@
     <string name="app_logo">App Logo</string>
     <string name="blank">blank</string>
     <string name="title_activity_time_study">TimeStudyActivity</string>
+    <string name="title_activity_sixsigma">sixsigma</string>
 
 </resources>

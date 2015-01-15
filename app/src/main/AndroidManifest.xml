@@ -26,6 +26,10 @@
             android:name=".TimeStudyActivity"
             android:label="@string/title_activity_time_study" >
         </activity>
+        <activity
+            android:name=".sixsigma"
+            android:label="@string/title_activity_sixsigma" >
+        </activity>
     </application>
 
 </manifest>

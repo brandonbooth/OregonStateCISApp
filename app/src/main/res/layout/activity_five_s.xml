@@ -118,8 +118,8 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Small Text"
         android:id="@+id/textView3"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_toRightOf="@+id/setnotes"
-        android:layout_toEndOf="@+id/setnotes" />
+        android:layout_above="@+id/checkBox"
+        android:layout_toRightOf="@+id/numchecked"
+        android:layout_toEndOf="@+id/numchecked" />
 
 </RelativeLayout>
