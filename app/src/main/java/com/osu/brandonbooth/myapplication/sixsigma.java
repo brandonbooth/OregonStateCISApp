@@ -1,9 +1,12 @@
 package com.osu.brandonbooth.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
+import android.widget.Toast;
 
 
 public class sixsigma extends ActionBarActivity {
@@ -12,6 +15,7 @@ public class sixsigma extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sixsigma);
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
     }
 
 
@@ -30,7 +34,22 @@ public class sixsigma extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.back) {
+            startActivity(new Intent(this, MainActivity.class));
+            return true;
+        }
+        if (id == R.id.search) {
+            Toast.makeText(getBaseContext(), "Click on the search icon", Toast.LENGTH_LONG).show();
+            return true;
+        }
+
+        if (id == R.id.help) {
+            Toast.makeText(getBaseContext(), "Please contact Brandon Booth at boothbr@onid.oregonstate.edu for help with this application.", Toast.LENGTH_LONG).show();
+            return true;
+        }
+
+        if (id == R.id.settings) {
+            Toast.makeText(getBaseContext(), "There are no settings yet.", Toast.LENGTH_LONG).show();
             return true;
         }
 

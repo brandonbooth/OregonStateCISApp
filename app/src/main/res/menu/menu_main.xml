@@ -15,8 +15,6 @@
         android:icon="@drawable/app_logo"
         app:showAsAction="always"/>
 
-
-
     <item android:id="@+id/settings"
         android:title="@string/action_settings"
         android:orderInCategory="100"
