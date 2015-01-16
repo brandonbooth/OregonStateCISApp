@@ -5,6 +5,10 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -14,6 +18,42 @@ public class FiveSActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_five_s);
+
+
+        final CheckBox ch1 = (CheckBox) findViewById(R.id.checkBox);
+        final CheckBox ch2 = (CheckBox) findViewById(R.id.checkBox2);
+
+        Button displayBtn = (Button) findViewById(R.id.button3);
+        displayBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String newLine = System.getProperty("line.separator");
+
+                int oldValue = 0;
+
+                if(ch1.isChecked()) {
+
+
+                    oldValue = oldValue +1;
+
+
+                    Toast.makeText(
+                            FiveSActivity.this,
+                            "Checkbox1 checked? " + ch1.isChecked() + newLine
+                                    + "Checkbox2 checked?" + ch2.isChecked(),
+                            Toast.LENGTH_SHORT).show();
+
+
+                    final TextView mTextView = (TextView) findViewById(R.id.numchecked);
+                    mTextView.setText("oldValue");
+
+                    final TextView txtValue = (TextView) findViewById(R.id.numchecked);
+                    txtValue.setText(Integer.toString(oldValue));
+                }
+            }
+        });
+
+
     }
 
 
