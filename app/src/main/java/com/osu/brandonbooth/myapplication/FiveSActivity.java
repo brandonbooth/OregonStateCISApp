@@ -50,6 +50,29 @@ public class FiveSActivity extends ActionBarActivity {
                     final TextView txtValue = (TextView) findViewById(R.id.numchecked);
                     txtValue.setText(Integer.toString(oldValue));
                 }
+
+                if(ch2.isChecked()) {
+
+                    oldValue = oldValue +1;
+
+
+                    Toast.makeText(
+                            FiveSActivity.this,
+                            "Checkbox1 checked? " + ch1.isChecked() + newLine
+                                    + "Checkbox2 checked?" + ch2.isChecked(),
+                            Toast.LENGTH_SHORT).show();
+
+
+                    final TextView mTextView = (TextView) findViewById(R.id.numchecked);
+                    mTextView.setText("oldValue");
+
+                    final TextView txtValue = (TextView) findViewById(R.id.numchecked);
+                    txtValue.setText(Integer.toString(oldValue));
+                }
+
+
+
+
             }
         });
 
