@@ -17,59 +17,7 @@ import android.widget.Toast;
 
 public class FiveSActivity extends ActionBarActivity {
 
-    private CheckBox checkBox1;
 
-    private SharedPreferences prefs;
-
-    private String prefName = "MyPref";
-
-    private boolean checkBox1_isChecked;
-
-    private static final String CHECKBOX1_STATE = "checkBox1_State";
-
-
-
-//    @Override
-//    protected void OnResume()
-//    {
-//        prefs = getSharedPreferences(prefName, MODE_PRIVATE);
-//        SharedPreferences.Editor editor = prefs.edit();
-//        editor.putBoolean(CHECKBOX1_STATE, checkBox1_isChecked);
-//    }
-
-
-    @Override
-    protected void onPause()
-    {
-        super.onPause();
-
-        if(checkBox1.isChecked())
-        {
-            checkBox1_isChecked = true;
-        }
-            else
-        {
-            checkBox1_isChecked = false;
-        }
-
-        prefs = getSharedPreferences(prefName, MODE_PRIVATE);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putBoolean(CHECKBOX1_STATE, checkBox1_isChecked);
-        editor.apply();
-
-        }
-
-
-
-
-    @Override
-    protected void onResume(){
-        super.onResume();
-        prefs = getSharedPreferences(prefName, MODE_PRIVATE);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putBoolean(CHECKBOX1_STATE, checkBox1_isChecked);
-        editor.apply();
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
