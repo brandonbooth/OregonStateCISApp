@@ -12,5 +12,6 @@
     <string name="blank">blank</string>
     <string name="title_activity_time_study">TimeStudyActivity</string>
     <string name="title_activity_sixsigma">sixsigma</string>
+    <string name="cb1">CheckBox1</string>
 
 </resources>
